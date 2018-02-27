@@ -15,6 +15,7 @@ async def on_message(message):
         spam = 0
         while spam != 5:
             spam += 1
+            await asyncio.sleep(0.5)
             await bot.send_message(discord.Object(id='Channel ID here'), 'An alerts worthy Pokémon has spawned, look above!')
         await bot.send_message(discord.Object(id='Channel ID here'), 'Completed alerts spam. :wave:')
 
